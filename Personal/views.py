@@ -28,7 +28,7 @@ def project(request):
         if  FTUuser :
             return render(request,'project.html', {'project':project})
         else :
-            messages.info(request,"เฉพาะ FTU Student")
+            messages.info(request,"You must update to Premium User,Contant Us.")
             return redirect ('index')
     else :
         messages.info(request,"Please Login First")
